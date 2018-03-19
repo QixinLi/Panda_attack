@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/signin_signup_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/character_choose_text1"
+        android:text="请选择你的角色："
+        android:textColor="#FFFFFF"/>
+    <Spinner
+        android:id="@+id/character_choose_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_character_table">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/choose_character_img"
+            android:scaleType="fitCenter"/>
+        <GridLayout
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:columnCount="1"
+            android:rowCount="5"
+            android:id="@+id/choose_msg_grid">
+                    <TextView
+                        android:id="@+id/choose_describe"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView android:id="@+id/choose_hp"
+                        android:textColor="#FFFFFF"/>
+
+
+                    <TextView android:id="@+id/choose_energy"
+                        android:textColor="#FFFFFF"/>
+
+
+                    <TextView android:id="@+id/choose_atk"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView android:id="@+id/choose_defence"
+                        android:textColor="#FFFFFF"/>
+
+            </GridLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_confirm_bt"
+        android:background="@drawable/confirm_bt"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>

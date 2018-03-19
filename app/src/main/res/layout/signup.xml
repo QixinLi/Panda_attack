@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_signup_bg"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_tel_edit"
+        android:textColor="#FFFFFF"
+        android:hint="Tel"
+        android:phoneNumber="true"
+        android:scaleType="fitXY"
+        android:maxLength="11"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_pwd_edit"
+        android:textColor="#FFFFFF"
+        android:hint="Password"
+        android:password="true"
+        android:scaleType="fitXY" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_repwd_edit"
+        android:textColor="#FFFFFF"
+        android:hint="Re-type password"
+        android:password="true"
+        android:scaleType="fitXY"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_name_edit"
+        android:textColor="#FFFFFF"
+        android:hint="Give a name to yourself"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signup_bt"
+        android:id="@+id/signup_signupbt"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>
